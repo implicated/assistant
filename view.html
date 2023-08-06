@@ -1,0 +1,53 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+    <!-- jQuery v1.9.1 -->
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <!-- lightgallery.js v1.6.6 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.6/css/lightgallery.min.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.6/js/lightgallery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="gallery-wrapper row">
+        <div class="col s6 m4 l4 xl3 gallery-box">
+            <a href="./2021/51" class="gallery-item" data-aos="zoom-in-up">
+                <div class="gallery-cover-box" style="background-image: url(2021/51/img/32.jpg);">
+                </div>
+                <p class="gallery-name">
+                    2021年五一
+                </p>
+            </a>
+        </div>
+        <div class="col s6 m4 l4 xl3 gallery-box">
+            <a href="./2021/101" class="gallery-item" data-aos="zoom-in-up">
+                <div class="gallery-cover-box" style="background-image: url(2021/101/img/90.jpg);">
+                </div>
+                <p class="gallery-name">
+                    2021年国庆
+                </p>
+            </a>
+        </div>
+        <div class="col s6 m4 l4 xl3 gallery-box">
+            <a href="./boots" class="gallery-item" data-aos="zoom-in-up">
+                <div class="gallery-cover-box" style="background-image: url(boots/img/1.jpg);">
+                </div>
+                <p class="gallery-name">
+                    长靴
+                </p>
+            </a>
+        </div>
+    </div>
+</div>
+<div id="example">
+    <a href="images/1.png"><img src="images/1.png"></a>
+    <a href="images/2.png"><img src="images/2.png"></a>
+    <a href="images/3.png"><img src="images/3.png"></a>
+    <a href="images/4.png"><img src="images/4.png"></a>
+    <a href="images/5.png"><img src="images/5.png"></a>
+</div>
+<script>
+    $("#example").lightGallery();
+</script>
+</body>

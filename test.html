@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lightgallery.js的使用示例</title>
+    <link type="text/css" rel="stylesheet" href="css/lightgallery-bundle.css"/>
+    <style type="text/css" rel="stylesheet">
+        ul {
+            float: left;
+            list-style-type: none;
+        }
+
+        ul li {
+            float: left;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        .lgallery {
+            width: 213px;
+            height: 137px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<!--<body onload="initLoad();">-->
+
+<!--<ul id="lightGallery">-->
+<!--    <li data-src="images/1.png">-->
+<!--        <img class="lgallery" src="images/1.png">-->
+<!--    </li>-->
+<!--    <li data-src="images/1.png">-->
+<!--        <img class="lgallery" src="images/2.png">-->
+<!--    </li>-->
+<!--    <li data-src="images/3.png">-->
+<!--        <img class="lgallery" src="images/3.png">-->
+<!--    </li>-->
+<!--</ul>-->
+
+<div id="lightgallery">
+    <a href="images/1.png">
+        <img class="lgallery" alt="img1" src="images/1.png"/>
+    </a>
+    <a href="images/2.png">
+        <img class="lgallery" alt="img2" src="images/2.png"/>
+    </a>
+    <a href="images/3.png">
+        <img class="lgallery" alt="img3" src="images/3.png"/>
+    </a>
+</div>
+
+<script src="js/lightgallery.min.js"></script>
+<script src="js/plugins/lg-fullscreen.min.js"></script>
+<script src="js/plugins/lg-thumbnail.min.js"></script>
+<script src="js/plugins/lg-autoplay.min.js"></script>
+<script src="js/plugins/lg-hash.min.js"></script>
+<script src="js/plugins/lg-pager.min.js"></script>
+<script src="js/plugins/lg-share.min.js"></script>
+<script src="js/plugins/lg-zoom.min.js"></script>
+<script type="text/javascript">
+    lightGallery(document.getElementById('lightgallery'), {
+        plugins: [lgZoom, lgThumbnail],
+        licenseKey: 'your_license_key',
+        speed: 500,
+    });
+</script>
+<!--<script type="text/javascript">-->
+<!--    function initLoad() {-->
+<!--        var lg = document.getElementById('lightGallery');-->
+<!--        lightGallery(lg, {-->
+<!--            mode: 'lg-slide',-->
+<!--            cssEasing: 'ease',-->
+<!--            speed: 500-->
+<!--        });-->
+<!--    }-->
+<!--</script>-->
+<!--</body>-->
+</html>
