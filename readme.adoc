@@ -3,3 +3,5 @@
 == DNF
 
 http://www.implicated.icu/assistant/dnf/attack-speed-calculator.html[DNF攻速计算器^]
+
+https://raw.githubusercontent.com/implicated/assistant/master/images/110.png[神界目标]
